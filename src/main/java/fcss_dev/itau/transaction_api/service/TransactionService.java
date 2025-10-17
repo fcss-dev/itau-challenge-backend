@@ -11,4 +11,8 @@ import java.util.List;
 @RequiredArgsConstructor
 public class TransactionService {
     private final List<TransactionRequestDTO> listTransaction = new ArrayList<>();
+
+    public void addTransaction( TransactionRequestDTO dto){
+        listTransaction.add(dto);
+    }
 }
