@@ -4,6 +4,7 @@ import fcss_dev.itau.transaction_api.controller.dto.TransactionRequestDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,6 +19,14 @@ public class TransactionService {
 
     public void deleteTransaction(){
         listTransaction.clear();
+    }
+
+    public List<TransactionRequestDTO> searchTransaction(Integer intervaloBusca){
+        OffsetDateTime dataHoraIntervalo = OffsetDateTime.now().minusSeconds(intervaloBusca);
+        return listTransaction.stream()
+                .filter(t -> t.dataHora()
+                        .isAfter(dataHoraIntervalo))
+                .toList();
     }
 
 }

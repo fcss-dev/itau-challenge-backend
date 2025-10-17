@@ -24,5 +24,4 @@ public class TransactionController {
         transactionService.deleteTransaction();
         return ResponseEntity.ok().build();
     }
-
 }
