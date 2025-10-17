@@ -15,4 +15,9 @@ public class TransactionService {
     public void addTransaction( TransactionRequestDTO dto){
         listTransaction.add(dto);
     }
+
+    public void deleteTransaction(){
+        listTransaction.clear();
+    }
+
 }
