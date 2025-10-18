@@ -37,10 +37,10 @@ desafio de desenvolvimento de software Backend. Consiste em criar uma API REST q
 
 
 - **EXTRAS**
-- [ ] Testes automatizados
-- [ ] Containerização 
+- [x] Testes automatizados
+- [x] Containerização 
 - [x] Logs 
-- [ ] Observabilidade 
+- [x] Observabilidade 
 - [x] Performance 
 - [x] Tratamento de Erros 
 - [x] Documentação da API 
@@ -50,6 +50,7 @@ desafio de desenvolvimento de software Backend. Consiste em criar uma API REST q
 
 
 ## 🚀 Como Executar
+- Via terminal 
 ```bash
   # Clonar o repositório
   git clone https://github.com/fcss-dev/itau-challenge-backend.git
@@ -60,6 +61,15 @@ desafio de desenvolvimento de software Backend. Consiste em criar uma API REST q
   # Executar com Maven
   mvn spring-boot:run
 ```
+- Via Docker  
+```Docker
+  # Clonar o repositório
+    git clone https://github.com/fcss-dev/itau-challenge-backend.git
+
+  # rodar o comando no terminal 
+    docker-compose up --build
+```
+
 
 
 
