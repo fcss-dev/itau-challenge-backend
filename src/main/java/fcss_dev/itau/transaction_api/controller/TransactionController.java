@@ -33,7 +33,7 @@ public class TransactionController {
     @DeleteMapping
     @Operation(description = "Endpoint responsável por deletar transações ")
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "201", description = "Transação deletadas com sucesso "),
+            @ApiResponse(responseCode = "200", description = "Transação deletadas com sucesso "),
             @ApiResponse(responseCode = "400", description = "Erro de requisição "),
             @ApiResponse(responseCode = "500", description = "Erro interno do servidor ")
     })
