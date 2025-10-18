@@ -25,6 +25,7 @@ desafio de desenvolvimento de software Backend. Consiste em criar uma API REST q
 - Maven
 - Lombook
 - Swagger
+- Docker
 
 
 
@@ -37,10 +38,10 @@ desafio de desenvolvimento de software Backend. Consiste em criar uma API REST q
 
 
 - **EXTRAS**
-- [ ] Testes automatizados
-- [ ] Containerização 
+- [x] Testes automatizados
+- [x] Containerização 
 - [x] Logs 
-- [ ] Observabilidade 
+- [x] Observabilidade 
 - [x] Performance 
 - [x] Tratamento de Erros 
 - [x] Documentação da API 
@@ -50,16 +51,29 @@ desafio de desenvolvimento de software Backend. Consiste em criar uma API REST q
 
 
 ## 🚀 Como Executar
+- Via terminal 
 ```bash
   # Clonar o repositório
-  git clone https://github.com/fcss-dev/itau-challenge-backend.git
+    git clone https://github.com/fcss-dev/itau-challenge-backend.git
   
   # Entrar na pasta
-  cd itau-challenge-backend
+    cd itau-challenge-backend
   
   # Executar com Maven
-  mvn spring-boot:run
+    mvn spring-boot:run
 ```
+- Via Docker  
+```Docker
+  # Clonar o repositório
+    git clone https://github.com/fcss-dev/itau-challenge-backend.git
+    
+  # Entrar na pasta
+    cd itau-challenge-backend
+
+  # rodar o comando no terminal 
+    docker-compose up --build
+```
+
 
 
 
