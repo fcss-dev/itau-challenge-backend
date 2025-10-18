@@ -23,7 +23,7 @@ desafio de desenvolvimento de software Backend. Consiste em criar uma API REST q
 - Lombook
 - Actuator
 - Maven
-- Lombook
+- Lombok
 - Swagger
 - Docker
 
@@ -96,7 +96,7 @@ desafio de desenvolvimento de software Backend. Consiste em criar uma API REST q
 | DELETE | /transacao | Apaga todos os dados de transações |
 | GET | /estatistica | retornar estatísticas das transações |
 
-- Com a aplicação em execução acesssar:  
+- Documentação API, com a aplicação em execução acesssar:  
     - [Swagger](http://localhost:8080/swagger-ui.html)
 
   

@@ -18,7 +18,7 @@ public class StatisticService {
     public final TransactionService transactionService;
 
     public StatisticResponseDTO calculateStatisticTransaction(Integer intervaloBusca){
-        log.info("Iniciada busca de estatísticas de transações pelo período de tempo" + intervaloBusca);
+        log.info("Iniciada busca de estatísticas de transações pelo período de tempo " + intervaloBusca);
 
         long start = System.nanoTime();
 
@@ -38,7 +38,7 @@ public class StatisticService {
         System.out.println("Tempo de requisição: " + timeRequestMs + " milissengundos");
 
 
-        log.info("Estatísticas retornadas com sucesso");
+        log.info("Estatísticas retornadas com sucesso ");
         return new StatisticResponseDTO(StatisticsTransactions.getCount(),
                 StatisticsTransactions.getSum(),
                 StatisticsTransactions.getAverage(),

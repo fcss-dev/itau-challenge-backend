@@ -18,12 +18,12 @@ public class TransactionController {
 
 
     @PostMapping
-    @Operation(description = "Endpoint responsável por adicionar transações")
+    @Operation(description = "Endpoint responsável por adicionar transações ")
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "201", description = "Transação gravada com sucesso"),
-            @ApiResponse(responseCode = "422", description = "Campos não atendem os requisitos da transação"),
-            @ApiResponse(responseCode = "400", description = "Erro de requisição"),
-            @ApiResponse(responseCode = "500", description = "Erro interno do servidor")
+            @ApiResponse(responseCode = "201", description = "Transação gravada com sucesso "),
+            @ApiResponse(responseCode = "422", description = "Campos não atendem os requisitos da transação "),
+            @ApiResponse(responseCode = "400", description = "Erro de requisição "),
+            @ApiResponse(responseCode = "500", description = "Erro interno do servidor ")
     })
     public ResponseEntity<Void> addTransaction(@RequestBody TransactionRequestDTO dto){
         transactionService.addTransaction(dto);
@@ -31,11 +31,11 @@ public class TransactionController {
     }
 
     @DeleteMapping
-    @Operation(description = "Endpoint responsável por deletar transações")
+    @Operation(description = "Endpoint responsável por deletar transações ")
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "201", description = "Transação deletadas com sucesso"),
-            @ApiResponse(responseCode = "400", description = "Erro de requisição"),
-            @ApiResponse(responseCode = "500", description = "Erro interno do servidor")
+            @ApiResponse(responseCode = "201", description = "Transação deletadas com sucesso "),
+            @ApiResponse(responseCode = "400", description = "Erro de requisição "),
+            @ApiResponse(responseCode = "500", description = "Erro interno do servidor ")
     })
     public ResponseEntity<Void> deleteTransaction(){
         transactionService.deleteTransaction();
