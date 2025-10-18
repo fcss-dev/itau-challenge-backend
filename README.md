@@ -19,8 +19,8 @@ desafio de desenvolvimento de software Backend. Consiste em criar uma API REST q
 
 ## 🛠 Tecnologias
 - Java 17
-- Spring Boot
-- Lombook
+- SpringBoot
+- Lombok
 - Actuator
 - Maven
 - Lombok
