@@ -19,6 +19,9 @@ public class StatisticService {
 
     public StatisticResponseDTO calculateStatisticTransaction(Integer intervaloBusca){
         log.info("Iniciada busca de estatísticas de transações pelo período de tempo" + intervaloBusca);
+
+        long start = System.nanoTime();
+
         List<TransactionRequestDTO> transactions = transactionService.searchTransaction(intervaloBusca);
 
         if (transactions.isEmpty()){
@@ -27,6 +30,13 @@ public class StatisticService {
 
         DoubleSummaryStatistics StatisticsTransactions = transactions.stream()
                 .mapToDouble(TransactionRequestDTO::valor).summaryStatistics();
+
+        long finish = System.nanoTime();
+        long timeRequest = finish - start;
+        double timeRequestMs = timeRequest / 1_000_000.0;
+
+        System.out.println("Tempo de requisição: " + timeRequestMs + " milissengundos");
+
 
         log.info("Estatísticas retornadas com sucesso");
         return new StatisticResponseDTO(StatisticsTransactions.getCount(),

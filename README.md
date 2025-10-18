@@ -21,6 +21,7 @@ desafio de desenvolvimento de software Backend. Consiste em criar uma API REST q
 - Java 17
 - Spring Boot
 - Lombook
+- Actuator
 - Maven
 - Lombook
 - Swagger
@@ -40,7 +41,7 @@ desafio de desenvolvimento de software Backend. Consiste em criar uma API REST q
 - [ ] Containerização 
 - [x] Logs 
 - [ ] Observabilidade 
-- [ ] Performance 
+- [x] Performance 
 - [x] Tratamento de Erros 
 - [x] Documentação da API 
 - [x] Documentação do Sistema  
