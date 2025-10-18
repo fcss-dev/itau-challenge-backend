@@ -36,11 +36,11 @@ desafio de desenvolvimento de software Backend. Consiste em criar uma API REST q
 
 
 - **EXTRAS**
-- [] Testes automatizados
-- [] Containerização 
+- [ ] Testes automatizados
+- [ ] Containerização 
 - [x] Logs 
-- [] Observabilidade 
-- [] Performance 
+- [ ] Observabilidade 
+- [ ] Performance 
 - [x] Tratamento de Erros 
 - [x] Documentação da API 
 - [x] Documentação do Sistema  
