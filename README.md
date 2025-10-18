@@ -50,26 +50,26 @@ desafio de desenvolvimento de software Backend. Consiste em criar uma API REST q
 
 ## 🚀 Como Executar
 ```bash
-# Clonar o repositório
-git clone https://github.com/fcss-dev/itau-challenge-backend.git
-
-# Entrar na pasta
-cd itau-challenge-backend
-
-# Executar com Maven
-mvn spring-boot:run
+  # Clonar o repositório
+  git clone https://github.com/fcss-dev/itau-challenge-backend.git
+  
+  # Entrar na pasta
+  cd itau-challenge-backend
+  
+  # Executar com Maven
+  mvn spring-boot:run
 ```
 
 
 
 ## 📂 Estrutura do Projeto
-```bash
-src/  
-    ├── service/  
-    ├── controller/  
-        ├── dtos/  
-    ├── exceptions/  
-    └── TransactionApiApplication.java 
+```
+  src/  
+      ├── service/  
+      ├── controller/  
+          ├── dtos/  
+      ├── exceptions/  
+      └── TransactionApiApplication.java 
 ```
  
 
