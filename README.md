@@ -23,7 +23,6 @@ desafio de desenvolvimento de software Backend. Consiste em criar uma API REST q
 - Lombok
 - Actuator
 - Maven
-- Lombok
 - Swagger
 - Docker
 
